@@ -1,0 +1,1336 @@
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(255, 255, 255);
+}
+body {
+    background-color: rgb(255, 255, 255);
+    margin:0;
+}
+
+div.page-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+div.title {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    text-align: left;
+    position: relative;
+}
+
+div.标题小圆,
+div.目录小圆,
+div.部分一小圆,
+div.部分二小圆1,
+div.部分二小圆2,
+div.部分三小圆 {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+div.标题 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+div.标题小圆 {
+    width: 60px;
+    height: 60px;
+    background-color:#6cb3d4;
+    border-radius: 50%;
+}
+
+div.title1 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    position: relative;
+    color: #6cb3d4;
+}
+
+div.sub-title {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    margin-top: -165px;
+}
+div.subb-title {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+div.subb-title {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+div.hand {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+div.reference {
+    font-family: monospace;
+    font-size: 13px;
+    color: #999;
+    text-align: right;
+    margin-top: 20px;
+}
+div.shape-container {
+    position: relative;
+    width: 90%;
+    height: 750px;
+    margin:0 auto;
+}
+
+div.line {
+    border-left: 1px dashed #999;
+    position: absolute;
+    height: 620px;
+    top: 70px;
+    left: 50%;
+}
+
+div.line2 {
+    border-top: 1px dashed #999;
+    position: absolute;
+    width: 100%;
+    top: 300px;
+    left: 0;
+}
+
+div.coord {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #b5b5b5;
+}
+
+div.coord1 {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: -55px;
+    bottom: -35px;
+    color: #b5b5b5;
+}
+
+div.中心 { 
+    background-color:#6cb3d4;
+    position: absolute;
+    left: 526px;
+    top: 250px;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    animation: pulse 2s infinite;
+}
+
+div.右上,
+div.左下,
+div.右下,
+div.左上,
+div.左上二,
+div.右上二,
+div.cir9,
+div.cir10,
+div.cir13,
+div.cir14,
+div.cir15,
+div.cir16,
+div.cir17,
+div.cir18 {
+    background-color:#000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+div.中心,
+div.右上,
+div.左下,
+div.右下,
+div.左上,
+div.左上二,
+div.右上二,
+div.cir9,
+div.cir10,
+div.cir13,
+div.cir14,
+div.cir15,
+div.cir16,
+div.cir17,
+div.cir18 {
+    opacity: 0;
+    animation: fadein 3s forwards, pulse 3s infinite;
+}
+@keyframes fadein {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+div.右上 {
+    top: 290px;
+    left: 30%;
+    
+}
+
+div.左下 { 
+    top: 360px;
+    left: 82%;
+
+}
+
+div.右下 {
+    top: 250px;
+    left: 70%;
+    
+}
+
+div.左上 {
+    top: 500px;
+    left: 37%;
+    
+}
+
+div.左上二 {
+    top: 100px;
+    left: 25%;
+    
+}
+
+div.右上二 {
+    top: 500px;
+    left: 62%;
+    
+}
+
+div.cir9 {
+    top: 600px;
+    left: 90%;
+    
+}
+
+div.cir10 {
+    top: 500px;
+    left: 16%;
+    
+}
+
+div.cir13 {
+    top: 160px;
+    left: 58%;
+   
+}
+
+div.cir14 {
+    top: 370px;
+    left: 20%;
+   
+}
+
+div.cir15 {
+    top: 420px;
+    left: 52%;
+   
+}
+
+div.cir16 {
+    top: 610px;
+    left: 60%;
+   
+}
+
+div.cir17 {
+    top: 120px;
+    left: 74%;
+    
+}
+
+div.cir18 {
+    top: 680px;
+    left: 27%;
+   
+}
+div.content-page {
+    width: 90%;
+    margin: 200px auto 0 auto;
+    min-height: 300px;
+    box-sizing: border-box;
+}
+div.目录 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+div.目录小圆 {
+    width: 70px;
+    height: 70px;
+    background-color:#6cb3d4;
+    border-radius: 50%;
+
+}
+div.content-title {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 0.95;
+}
+
+div.content-grid {
+    display: flex;
+    gap:90px;
+    flex-direction: column;
+}
+
+div.content1,
+div.content2,
+div.content3 {
+    border-top: 1px dashed #cfcfcf;
+    position: relative;
+}
+
+div.目录1,
+div.目录2,
+div.目录3 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #6cb3d4;
+}
+
+div.coord3,
+div.coord4,
+div.coord5 {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    width: 58%;
+    margin-top:10px;
+}
+div.content1-info,
+div.content2-info,
+div.content3-info {
+    display: none;
+    font-family: monospace;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 15px;
+    width: 60%;
+    line-height: 1.6;
+}
+
+div.content1:hover .content1-info,
+div.content2:hover .content2-info,
+div.content3:hover .content3-info {
+    display: block;
+}
+
+div.content1 img{
+    display: none;
+    width: 26%;
+    position: absolute;
+    top: 10px;
+    right: 120px;
+}
+div.content2 img {
+    display: none;
+    width: 22%;
+    position: absolute;
+    top: 5px;
+    right: 120px;
+}
+div.content3 img {
+    display: none;
+    width: 30%;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+}
+
+div.content1:hover img,
+div.content2:hover img,
+div.content3:hover img {
+    display: block;
+}
+
+div.section1-container {
+    width: 90%;
+    margin: 150px auto 0 auto;
+    position: relative;
+    border-top: 2px dashed #cfcfcf;
+    padding-top: 50px;
+}
+
+div.section1-title {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #6cb3d4;
+    transition: 0.3s;
+}
+
+div.section1-coord {
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+div.section1-content {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    gap: 24px;
+}
+
+div.部分一小圆 {
+    width: 90px;
+    height: 90px;
+    background-color:#6cb3d4;
+    border-radius: 50%;
+}
+
+div.section1-subtitle {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 0.95;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+div.section1-intro {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
+    width: 70%;
+    margin: 60px auto 0 auto;
+    text-align: center;
+}
+
+div.image-layout {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    align-items: flex-start;
+}
+
+div.image1-container {
+    width: 30%;
+    margin: 0;
+    text-align: center;
+}
+div.image2-container {
+    width: 30%;
+    margin: 0;
+    text-align: center;
+}
+div.image3-container {
+    width: 30%;
+    margin: 0;
+    text-align: center;
+
+}
+div.image2 img {
+    width: 100%;
+    display: block;
+    height: 280px;
+    object-fit: cover;
+}
+div.image1 img,
+div.image3 img {
+    width: 100%;
+    display: block;
+    height: 280px;
+    object-fit: cover;
+}
+
+div.image1 {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+div.image1-number {
+    font-family: monospace;
+    font-size: 12px;
+    color: #6cb3d4;
+    margin-bottom: 18px;
+}
+
+div.image1-title {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    min-height: 90px;
+    line-height: 1.05;
+}
+
+div.image1-title:hover,
+div.image2-title:hover,
+div.image3-title:hover {
+    color: #6cb3d4;
+}
+div.image1-descri {
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #777777;
+    margin-top: 16px;
+    letter-spacing: 0.2px;
+}
+
+div.image1-text {
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000000;
+    border-top: 1px dashed #cfcfcf;
+    padding-top: 16px;
+    margin-top: 24px;
+}
+
+div.image2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+div.image2-number {
+    font-family: monospace;
+    font-size: 12px;
+    color: #6cb3d4;
+    margin-bottom: 18px;
+}
+
+div.image2-title {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    min-height: 90px;
+    line-height: 1.05;
+}
+
+div.image2-descri {
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #777777;
+    margin-top: 16px;
+    letter-spacing: 0.2px;
+}
+
+div.image2-text {
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000000;
+    border-top: 1px dashed #cfcfcf;
+    padding-top: 16px;
+    margin-top: 24px;
+}
+
+div.image3 {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+div.image3-number {
+    font-family: monospace;
+    font-size: 12px;
+    color: #6cb3d4;
+    margin-bottom: 18px;
+}
+
+div.image3-title {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    min-height: 90px;
+    line-height: 1.05;
+}
+
+div.image3-descri {
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #777777;
+    margin-top: 16px;
+    letter-spacing: 0.2px;
+}
+
+div.image3-text {
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000000;
+    border-top: 1px dashed #cfcfcf;
+    padding-top: 16px;
+    margin-top: 24px;
+}
+div.observation1 {
+    margin-top: 140px;
+    padding-top: 50px;
+    border-top: 2px dashed #cfcfcf;
+}
+
+div.observation1-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    border-left: 6px solid #6cb3d4;
+    padding-left: 20px;
+}
+
+div.observation1-title {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+
+div.observation1-status {
+    font-family: monospace;
+    font-size: 13px;
+    color: #6cb3d4;
+    margin-top: 25px;
+    text-align: right;
+    animation: blink 2s infinite;
+}
+
+div.observation1-text {
+    width: 75%;
+    margin: 100px auto 0 auto;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666666;
+    text-align: center;
+}
+
+
+div.section2-container{
+    width: 100%;
+    padding:50px 0;
+    position: relative;
+    margin: 150px auto 0px;
+    border-top: 2px dashed rgb(227, 227, 227);
+}
+
+div.section2-contents {
+    width: 90%;
+    margin: 0 auto;
+}
+div.section2-title {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #6cb3d4;
+    text-align: right;
+    transition: 0.3s;
+}
+
+div.section2-coord {
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    margin-top: 10px;
+    text-align: right;
+}
+
+div.section2-content1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+    gap: 24px;
+    padding-top: 50px;
+}
+
+div.section2-subtitle {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 0.95;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: right;
+}
+div.部分二小圆1 {
+    width: 90px;
+    height: 90px;
+    background-color:#6cb3d4;
+    border-radius: 50%;
+}
+
+div.section2 {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-size: 23px;
+    color: #ffffff;
+    text-align: center;
+}
+
+div.section2 img{
+    width: 100%;
+}
+
+img.illustration1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #e1e1e150;
+    width: 100%;
+
+}
+
+div.image-hover:hover img.illustration1 {
+    opacity: 1;
+}
+
+div.section2 p {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    color:#666666;
+    width: 58%;
+    margin: 60px auto 50px auto;
+    text-align: center;
+}
+
+div.section2-grid {
+    margin-top: 90px;
+    
+}
+div.section2-grid img{
+    width:100%;
+    display:block;
+}
+
+div.section2-grid-text {
+    position: relative;
+    font-family: monospace;
+    font-size: 15px;
+    color: #6cb3d4;
+    border: 1px solid #cfcfcf;
+    width: 70%;
+    margin: 0 auto;
+}
+
+div.label-a {
+    position: absolute;
+    font-family: monospace;
+    font-size: 15px;
+    color: #6cb3d4;
+    background-color:rgb(243, 243, 243);
+    background-size:20%;
+    top: 10%;
+    left: -8%;
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+div.label-b {
+    position: absolute;
+    font-family: monospace;
+    font-size: 15px;
+    color: #6cb3d4;
+    background-color:rgb(243, 243, 243);
+    background-size:20%;
+    top: 40%;
+    right: -8%;
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+div.label-c {
+    position: absolute;
+    font-family: monospace;
+    font-size: 15px;
+    color: #6cb3d4;
+    background-color:rgb(243, 243, 243);
+    background-size:20%;
+    bottom: 12%;
+    left: -8%;
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+div.label-d {
+    position: absolute;
+    font-family: monospace;
+    font-size: 15px;
+    color: #6cb3d4;
+    background-color:rgb(243, 243, 243);
+    background-size:20%;
+    bottom: 5%;
+    right:-8%;
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+div.section2-grid-data {
+    margin-top: 35px;
+    font-family: monospace;
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+div.SUBMARINE-descri {
+    width: 70%;
+    margin: 35px auto 0 auto;
+    padding: 18px 0;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #666666;
+    text-align: center;
+}
+
+div.section2-ip {
+    width: 100%;
+    margin: 0;
+}
+
+div.ip-container {
+    position: relative;
+    overflow: hidden;
+    border-top: 2px dashed #cfcfcf;
+    padding-top: 50px;
+}
+
+div.ip-content,
+div.ip-desc,
+div.ip-layout,
+div.ip-data,
+div.routing-descri {
+    position: relative;
+}
+
+div.ip-layout {
+    position: relative;
+    display: grid;
+    grid-template-columns:20% 55% 25%;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+div.ip-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    padding-left:20px;
+}
+
+div.ip-title {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+div.部分二小圆2 {
+    width: 90px;
+    height: 90px;
+    background-color:#6cb3d4;
+    border-radius: 50%;
+}
+
+div.ip-desc {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
+    width: 58%;
+    margin: 60px auto 50px auto;
+    text-align: center;
+}
+div.ip-list img {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 0 auto;
+}
+
+div.ip-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.ip-tags.left {
+    align-items: flex-end;
+}
+
+div.ip-tags.right {
+    align-items: flex-start;
+}
+
+div.ip-tags span {
+    font-family: monospace;
+    font-size: 14px;
+    color:#6cb3d4;
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+div.ip-data {
+    margin-top: 35px;
+    font-family: monospace;
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    flex-direction:column;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+}
+div.routing-descri {
+    margin: 40px auto 40px auto;
+    font-family:monospace;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #000000;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 100px;
+    transition: 0.8s;
+}
+
+div.routing-descri:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+div.routing-descri b {
+    color: #6cb3d4;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+}
+
+div.routing-descri em {
+    color: #5a5a5a;
+    font-style: italic;
+}
+
+div.observation2 {
+    width: 100%;
+    margin: 140px auto 0 auto;
+    border-top: 2px dashed #cfcfcf;
+    padding-top: 50px;
+}
+
+div.observation2-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+div.observation2-title {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    border-left: 6px solid #6cb3d4;
+    padding-left: 20px;
+}
+
+div.observation2-status {
+    font-family: monospace;
+    font-size: 13px;
+    color: #6cb3d4;
+    margin-top: 25px;
+    text-align: right;
+    animation: blink 2s infinite;
+}
+
+div.observation2-grid {
+    display: grid;
+    grid-template-columns:25% 25% 25%;
+    gap: 28px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+div.observation2-box {
+    border: 1px dashed #000000;
+    padding: 25px;
+}
+
+div.observation2-label {
+    font-family: monospace;
+    font-size: 11px;
+    color: #6cb3d4;
+    margin-bottom: 18px;
+}
+
+div.observation2-value {
+    font-family:"neue-haas-grotesk-text", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#6cb3d4;
+}
+
+div.observation2-desc{
+    font-family: monospace;
+    font-size: 13px;
+    color: #777777;
+    margin-top: 14px;
+    line-height: 1.4;
+}
+
+div.observation2-text {
+    width: 70%;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 70px auto 0px auto;
+    text-align: center;
+}
+
+div.section3-container {
+    width: 100%;
+    position: relative;
+    border-top: 2px dashed #e3e3e3;
+    padding-top: 50px;
+    background-color:#ffffff;
+    margin: 150px auto 0px
+}
+div.section3-contents {
+    width: 90%;
+    margin: 0 auto;
+}
+div.section3-title {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #6cb3d4;
+    transition: 0.3s;
+}
+
+div.section1-title:hover,
+div.section2-title:hover,
+div.section3-title:hover {
+    letter-spacing: 1.5px;
+}
+
+div.section3-coord {
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+div.section3-content{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    gap: 24px;
+}
+
+div.部分三小圆 {
+    width: 90px;
+    height: 90px;
+    background-color: #6cb3d4;
+    border-radius: 50%;
+}
+
+div.section3-subtitle {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 0.95;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+div.section3-intro {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
+    width: 58%;
+    margin: 60px auto 0 auto;
+    text-align: center;
+}
+div.section3-grid {
+    display:grid;
+    grid-template-columns:31% 31% 31%;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+div.section3-grid img {
+    width: 100%;
+    display: block;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+div.grid1-title,
+div.grid2-title,
+div.grid3-title,
+div.grid4-title,
+div.grid5-title,
+div.grid6-title {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+div.grid1-title:hover,
+div.grid2-title:hover,
+div.grid3-title:hover,
+div.grid4-title:hover,
+div.grid5-title:hover,
+div.grid6-title:hover {
+    color: #6cb3d4;
+}
+
+div.grid1-data,
+div.grid2-data,
+div.grid3-data,
+div.grid4-data,
+div.grid5-data,
+div.grid6-data {
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #5a5a5a;
+    margin-top: 14px;
+     text-align: center;
+}
+
+div.grid1-text,
+div.grid2-text,
+div.grid3-text,
+div.grid4-text,
+div.grid5-text,
+div.grid6-text {
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #5a5a5a;
+    margin-top: 14px;
+     text-align: center;
+}
+
+div.image-hover {
+    position: relative;
+}
+img.illustration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #e1e1e150;
+}
+div.image-hover:hover img.illustration {
+    opacity: 1;
+}
+div.grid4,
+div.grid5,
+div.grid6 {
+    margin-top: 100px;
+}
+
+div.observation3 {
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 2px dashed #cfcfcf;
+}
+
+div.observation3-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+div.observation3-title {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000000;
+    border-left: 6px solid #6cb3d4;
+    padding-left: 20px;
+}
+
+div.observation3-status {
+    font-family: monospace;
+    font-size: 13px;
+    color: #6cb3d4;
+    margin-top: 25px;
+    text-align: right;
+    animation: blink 2s infinite;
+}
+
+div.observation3-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 30px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+div.observation3-box {
+    border: 1px dashed #000000;
+    padding: 25px;
+}
+
+div.observation3-label {
+    font-family: monospace;
+    font-size: 11px;
+    color: #6cb3d4;
+    margin-bottom: 18px;
+}
+
+div.observation3-value {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color:#6cb3d4;
+}
+
+div.observation3-desc {
+    font-family: monospace;
+    font-size: 13px;
+    color: #777777;
+    margin-top: 14px;
+    line-height: 1.4;
+}
+div.observation3-text {
+    width: 70%;
+    margin: 70px auto 0 auto;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666666;
+    text-align: center;
+}
+
+
+div.colophon {
+    margin-top: 200px;
+    border-top: 2px dashed #b5b5b5;
+    margin-bottom: 50px;
+}
+
+div.colophon-text {
+    width: 60%;
+    margin: 20px auto 0px auto;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #000000;
+    text-align: center;
+
+}
+
+div.colophon-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 70px;
+}
+
+div.colophon-box {
+    border: 1px dashed #6cb3d4;
+    padding: 25px;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #000000;
+    text-align: center;
+}
