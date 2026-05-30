@@ -161,10 +161,11 @@ div.coord1 {
 }
 
 div.中心 { 
-    background-color:#6cb3d4;
+   background-color:#6cb3d4;
     position: absolute;
     left: 526px;
     top: 250px;
+    transform: translateX(-50%);
     border-radius: 50%;
     width:100px;
     height:100px;
@@ -387,6 +388,8 @@ div.content1 img{
     position: absolute;
     top: 10px;
     right: 120px;
+    object-fit: contain;
+    max-height: 400px;
 }
 div.content2 img {
     display: none;
@@ -394,6 +397,8 @@ div.content2 img {
     position: absolute;
     top: 5px;
     right: 120px;
+    object-fit: contain;
+    max-height: 400px;
 }
 div.content3 img {
     display: none;
