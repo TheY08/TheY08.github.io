@@ -163,7 +163,7 @@ div.coord1 {
 div.中心 { 
    background-color:#6cb3d4;
     position: absolute;
-    left: 526px;
+    left: 600px;
     top: 250px;
     transform: translateX(-50%);
     border-radius: 50%;
@@ -389,7 +389,7 @@ div.content1 img{
     top: 10px;
     right: 120px;
     object-fit: contain;
-    max-height: 400px;
+    max-height: 300px;
 }
 div.content2 img {
     display: none;
@@ -398,7 +398,7 @@ div.content2 img {
     top: 5px;
     right: 120px;
     object-fit: contain;
-    max-height: 400px;
+    max-height: 300px;
 }
 div.content3 img {
     display: none;
